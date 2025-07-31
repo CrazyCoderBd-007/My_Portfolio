@@ -1,1 +1,17 @@
-_data/profile.yml
+name:
+  bn: "আপনার নাম"
+  en: "Your Name"
+profession:
+  bn: "আপনার পেশা"
+  en: "Your Profession"
+resume: "/resume.pdf" # সিভি ফাইলের পাথ
+skills:
+  - icon: "fab fa-html5"
+    name:
+      bn: "এইচটিএমএল৫"
+      en: "HTML5"
+  - icon: "fab fa-css3-alt"
+    name:
+      bn: "সিএসএস৩"
+      en: "CSS3"
+# ... অন্যান্য দক্ষতা যোগ করুন
