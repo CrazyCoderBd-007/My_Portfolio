@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main # আপনার গিটহাব ব্রাঞ্চের নাম
+
+media_folder: "assets/images" # ছবিগুলো কোথায় আপলোড হবে
+public_folder: "/assets/images" # ছবিগুলো ওয়েবসাইট থেকে কীভাবে দেখা যাবে
+
+collections:
+  - name: "settings"
+    label: "সাইট সেটিংস"
+    files:
+      - file: "_data/profile.yml"
+        label: "প্রোফাইল তথ্য"
+        name: "profile"
+        fields:
+          - { label: "নাম (বাংলা)", name: "name_bn", widget: "string" }
+          - { label: "নাম (ইংরেজি)", name: "name_en", widget: "string" }
+          - { label: "পেশা (বাংলা)", name: "profession_bn", widget: "string" }
+          - { label: "পেশা (ইংরেজি)", name: "profession_en", widget: "string" }
+          - { label: "সিভি ফাইল", name: "resume", widget: "file" }
+
+  - name: "projects"
+    label: "প্রকল্প"
+    folder: "_data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "প্রকল্পের নাম (বাংলা)", name: "title_bn", widget: "string" }
+      - { label: "প্রকল্পের নাম (ইংরেজি)", name: "title_en", widget: "string" }
+      - { label: "বিবরণ (বাংলা)", name: "desc_bn", widget: "text" }
+      - { label: "বিবরণ (ইংরেজি)", name: "desc_en", widget: "text" }
+      - { label: "প্রকল্পের ছবি", name: "image", widget: "image" }
+      - { label: "লাইভ লিংক", name: "live_url", widget: "string" }
+      - { label: "গিটহাব লিংক", name: "github_url", widget: "string" }
