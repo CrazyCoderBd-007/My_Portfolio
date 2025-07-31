@@ -1,1 +1,96 @@
-index.html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="portfolio_title">আমার পোর্টফোলিও</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- হেডার এবং মেনুবার -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#info" data-lang-key="nav_info">তথ্য</a></li>
+                <li><a href="#address" data-lang-key="nav_address">ঠিকানা</a></li>
+                <li><a href="#contact" data-lang-key="nav_contact">যোগাযোগ</a></li>
+            </ul>
+            <div class="controls">
+                <div class="lang-switcher">
+                    <button id="lang-bn">BN</button>
+                    <span>|</span>
+                    <button id="lang-en">EN</button>
+                </div>
+                <button id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ছবি সেকশন -->
+        <section id="home">
+            <div class="container">
+                <img src="profile.jpg" alt="আমার ছবি" class="profile-pic">
+                <h1 data-lang-key="my_name">[এখানে আপনার নাম লিখুন]</h1>
+                <p data-lang-key="my_profession">[এখানে আপনার পেশা লিখুন]</p>
+            </div>
+        </section>
+
+        <!-- তথ্য সেকশন -->
+        <section id="info">
+            <div class="container">
+                <h2 data-lang-key="info_title">আমার তথ্য</h2>
+                <table class="info-table">
+                    <tr>
+                        <td data-lang-key="info_name_label">নাম</td>
+                        <td data-lang-key="info_name_value">[আপনার পুরো নাম]</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="info_religion_label">ধর্ম</td>
+                        <td data-lang-key="info_religion_value">[আপনার ধর্ম]</td>
+                    </tr>
+                    <tr>
+                        <td data-lang-key="info_age_label">বয়স</td>
+                        <td data-lang-key="info_age_value">[আপনার বয়স]</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ঠিকানা সেকশন -->
+        <section id="address">
+            <div class="container">
+                <h2 data-lang-key="address_title">আমার ঠিকানা</h2>
+                <p data-lang-key="address_details_1">[আপনার সম্পূর্ণ ঠিকানা এখানে লিখুন]</p>
+                <p data-lang-key="address_details_2">[গ্রাম/শহর, জেলা, দেশ]</p>
+            </div>
+        </section>
+
+        <!-- যোগাযোগ সেকশন -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-lang-key="contact_title">যোগাযোগ</h2>
+                <p data-lang-key="contact_intro">আমার সাথে যোগাযোগ করতে নিচের মাধ্যমগুলো ব্যবহার করতে পারেন।</p>
+                <div class="social-links">
+                    <a href="mailto:[আপনার জিমেইল আইডি]" target="_blank" title="Gmail"><i class="fas fa-envelope"></i></a>
+                    <a href="[আপনার ফেসবুক প্রোফাইল লিংক]" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="[আপনার ইউটিউব চ্যানেল লিংক]" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="[আপনার টিকটক প্রোফাইল লিংক]" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-key="footer_text">© ২০২৫ সর্বস্বত্ব সংরক্ষিত। [আপনার নাম]</p>
+    </footer>
+
+    <!-- জাভাস্ক্রিপ্ট ফাইল -->
+    <script src="script.js"></script>
+</body>
+</html>
