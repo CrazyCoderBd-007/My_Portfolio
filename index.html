@@ -45,6 +45,93 @@
         <section id="home">
             <div class="container" data-aos="fade-in">
                 <img src="profile.jpg" alt="আমার ছবি" class="profile-pic">
+                <h1 data-lang-key="my_name">[আপনার নাম]</h1>
+                <p data-lang-key="my_profession">[আপনার পেশা]</p>
+                <!-- সিভি ডাউনলোড বাটন -->
+                <a href="resume.pdf" download class="btn" data-lang-key="download_resume">সিভি ডাউনলোড</a>
+            </div>
+        </section>
+
+        <!-- দক্ষতা সেকশন -->
+        <section id="skills" class="alternate-bg">
+            <div class="container">
+                <h2 data-lang-key="skills_title" data-aos="fade-up">আমার দক্ষতা</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-html5"></i> <span data-lang-key="skill_html">এইচটিএমএল৫</span></div>
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-css3-alt"></i> <span data-lang-key="skill_css">সিএসএস৩</span></div>
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-js"></i> <span data-lang-key="skill_js">জাভাস্ক্রিপ্ট</span></div>
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-react"></i> <span data-lang-key="skill_react">রিঅ্যাক্ট</span></div>
+                    <!-- আরও দক্ষতা যোগ করুন -->
+                </div>
+            </div>
+        </section>
+
+        <!-- প্রকল্প সেকশন -->
+        <section id="projects">
+            <div class="container">
+                <h2 data-lang-key="projects_title" data-aos="fade-up">আমার প্রকল্পসমূহ</h2>
+                <div class="projects-grid">
+                    <!-- প্রকল্প ১ -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="project1.jpg" alt="প্রকল্প ১ এর ছবি">
+                        <h3 data-lang-key="project1_title">প্রকল্পের নাম ১</h3>
+                        <p data-lang-key="project1_desc">এই প্রকল্পটি কী সম্পর্কিত এবং কোন প্রযুক্তি ব্যবহার করা হয়েছে তার একটি সংক্ষিপ্ত বিবরণ।</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary" target="_blank" data-lang-key="project_live_demo">লাইভ ডেমো</a>
+                            <a href="#" class="btn-secondary" target="_blank" data-lang-key="project_github_code">গিটহাব কোড</a>
+                        </div>
+                    </div>
+                    <!-- প্রকল্প ২ -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="project2.jpg" alt="প্রকল্প ২ এর ছবি">
+                        <h3 data-lang-key="project2_title">প্রকল্পের নাম ২</h3>
+                        <p data-lang-key="project2_desc">এই প্রকল্পটি কী সম্পর্কিত এবং কোন প্রযুক্তি ব্যবহার করা হয়েছে তার একটি সংক্ষিপ্ত বিবরণ।</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-secondary" target="_blank" data-lang-key="project_live_demo">লাইভ ডেমো</a>
+                            <a href="#" class="btn-secondary" target="_blank" data-lang-key="project_github_code">গিটহাব কোড</a>
+                        </div>
+                    </div>
+                    <!-- আরও প্রকল্প কার্ড যোগ করুন -->
+                </div>
+            </div>
+        </section>
+
+        <!-- যোগাযোগ সেকশন -->
+        <section id="contact" class="alternate-bg">
+            <div class="container">
+                <h2 data-lang-key="contact_title" data-aos="fade-up">যোগাযোগ</h2>
+                <p data-lang-key="contact_intro" data-aos="fade-up">যেকোনো প্রশ্ন বা কাজের জন্য আমার সাথে যোগাযোগ করুন।</p>
+                <!-- Formspree ফর্ম -->
+                <form id="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_CODE" method="POST" data-aos="fade-up" data-aos-delay="100">
+                    <input type="text" name="name" placeholder="আপনার নাম" data-lang-key="form_name_placeholder" required>
+                    <input type="email" name="email" placeholder="আপনার ইমেইল" data-lang-key="form_email_placeholder" required>
+                    <textarea name="message" rows="6" placeholder="আপনার বার্তা" data-lang-key="form_message_placeholder" required></textarea>
+                    <button type="submit" class="btn" data-lang-key="form_submit_button">বার্তা পাঠান</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-key="footer_text">© ২০২৫ সর্বস্বত্ব সংরক্ষিত। [আপনার নাম]</p>
+    </footer>
+
+    <!-- AOS (Animate on Scroll) Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Main Script File -->
+    <script src="script.js"></script>
+</body>
+</html>                </div>
+                <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- হোম সেকশন -->
+        <section id="home">
+            <div class="container" data-aos="fade-in">
+                <img src="profile.jpg" alt="আমার ছবি" class="profile-pic">
                 <h1 data-lang-key="my_name">[Md Khalid Hasan]</h1>
                 <p data-lang-key="my_profession">[Coder]</p>
                 <!-- সিভি ডাউনলোড বাটন -->
